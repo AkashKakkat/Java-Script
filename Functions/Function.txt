@@ -1,0 +1,55 @@
+Functions are block of code design to perform partricular task
+
+
+
+
+1 => Function-Declaration
+
+  function declaration one of the ways to define the function
+
+  Function Function_name(parameter){
+    function_body
+  }
+  Function_name("arguments");
+
+  -----Key-Features-----
+  * hoisting -> calling a function before defining it
+  * named-Function -> function declaration must have a function name
+  * global-scope -> its defines outside any block, globally-scoped
+  * local-scope -> its defines only inside a block, locally-scoped
+
+
+
+
+2 => Function-Expression
+
+  function expression is a way to define inside an expression and assign into variable
+
+   let variable_name = function(){
+    function_body
+   }
+
+   -----Key-Features-----
+   * Anounimous/name -> function without a name is called Anounymous function
+   * not hoisting
+   * can be assinged to variables/objects
+   * can be used as an argument
+
+
+
+
+
+3 => Arrow-Function
+
+4 => CallBack-Function
+
+5 => IIFE(Immediatly Invoked Function Expression)
+
+
+Pre-Defined Functions (Built-In Functions)
+
+1 => String Functions
+
+2 => Date Functions
+
+3 => Math Functions
