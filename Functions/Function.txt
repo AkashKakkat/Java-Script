@@ -41,9 +41,25 @@ Functions are block of code design to perform partricular task
 
 3 => Arrow-Function
 
+Arrow function is a shortway syntax of writing function in JS , Indroduced in ES6 (ECMA-SCRIPT)
+
+
 4 => CallBack-Function
 
+ * Function passing another function as an Argument
+ * Handle Asyncronous operations
+ * Customise behaviour of genereal purpose Functions
+ * Avoid blocking code execution
+ 
 5 => IIFE(Immediatly Invoked Function Expression)
+
+ * Imediately Invoked
+ * Data privacy => variables defined inside IIFE are not accessable outside
+ * Closure => an inner function inside an outer function
+ * Self-Contain => Execute independantly without effecting surrrounding code 
+
+
+ 
 
 
 Pre-Defined Functions (Built-In Functions)

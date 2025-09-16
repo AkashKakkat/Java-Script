@@ -1,0 +1,14 @@
+Pre_Defined functions (built-in functions/native functions )
+pre_defined functions are functions that arealready provided by JS
+
+* Save time => no need to code from scratch
+* increase code readability
+* optimized
+
+  ----Types----
+
+1 => String Functions
+
+2 => Date Functions
+
+3 => Math Functions
