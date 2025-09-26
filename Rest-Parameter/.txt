@@ -1,0 +1,1 @@
+The rest-parameter Sytax : (...) allows a function to eccept an infinite number of argumment as an array
