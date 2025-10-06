@@ -1,0 +1,21 @@
+<!--  returns all the text contents of the element(including hidden text like display-none,visibility-hidden) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo">HELLO WORLD <span style="display: none;">AKASH</span></p>
+    <script>
+        let para = document.getElementById("demo");
+        console.log(para.textContent);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+DOCUMENT OBJECT MODEL
+dom is a programming interface providing by browser. it allows js to access / manipulate the structure ,style and content of a webpage.
+
+programming interface is a set of tools ,methods and rules that allows software to intract with something else such as system,service or document.

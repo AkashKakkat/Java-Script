@@ -1,0 +1,21 @@
+ <!-- it is a js method used to access an html element by its id attribute -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="main-h">Welcome...</h1>
+    <button onclick="changeHeading()">Click Mee..</button>
+    <script>
+        function changeHeading(){
+            // use get elementbyid to access the heading
+            const heading = document.getElementById("main-h");
+            heading.textContent="Melcowe..."
+        }
+    </script>
+</body>
+</html>

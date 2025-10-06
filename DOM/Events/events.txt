@@ -1,0 +1,3 @@
+  events is an action or occurance that happens to the browser
+
+  event handling means writing a js code that will be run when specific event occurs
