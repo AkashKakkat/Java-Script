@@ -1,0 +1,96 @@
+=> wt the difference between synchronous & asynchronous operation..?
+
+    -----synchronous operation-----              
+code is executed as line by line.
+time wasting - each task wait for the previous one 
+
+
+    -----asynchronous operation-----
+the task can run without waiting for others to finish.
+use ful for time saving.
+
+=> wt is DOM..?
+
+---DOCUMENT OBJECT MODEL---
+
+dom is a programming interface providing by browser. it allows js to access / manipulate the structure ,style and content of a webpage. example : getelementbyid,getelementbyname,etc...
+
+=> wt are the data types in js..?
+
+there are six primitive-types data in js : string , number , boolean , null , undefined , and symbol 
+
+=> wt is the event in js..?
+
+an event is an action or occurence that happens in the browser , such as a button click or page load .
+
+=> wt are closure in js..?
+
+closures are funtions that have access to varriables from an outer function. its encapsulate data.
+
+=> wt is the difference btwn map & foreach..? (imp)
+
+----map----
+transform each element & return a new array
+
+----foreach----
+executes a funtion for each elements in the array( does not return)
+
+=> wt is the callback function in js..?
+
+Function passing another function as an Argument
+Handle Asyncronous operations
+Avoid blocking code execution
+
+=> wt is inheritance in js..?
+
+one class can inherits properties and method  from another class by using 'Extents' keyword
+
+=> wt is the purpose of try catch statement in js..?
+
+the trycatch statement is used for error handling in javascript
+
+=> wt is the purpose of addeventlistener method in js..?
+
+AddEventListener is a method used to attach an event listener to an element. it allows mutiple events on a function
+
+=> wt the difference btwn qwery selector & qwery selectorAll..?
+
+----query selector----
+method is used to select the first element that matches a specified css selector
+
+----query selectorAll----
+method is used to select the all element that matches a specified css selector
+
+=> wt the difference btwn null & undefined..?
+
+---null---
+null is refers to absence of value
+
+---undefined---
+undefined is refers to uninitialized or undefined value
+
+=> wt the difference btwn equal & strictly-equal..?
+
+---equal---
+equal checks only the values
+
+---strictly-equal---
+strictly-equal checks values and its data types
+
+=> wt is hoisting in js..?
+
+hoisting means call the function before defining a function
+
+=> wt the 'this' keyword in js..?
+
+this keyword refers to the object that is currenty executing the code
+
+=> wt are the different ways to define functions in js..?
+
+
+=> wt is the purpose of let,var & const..?
+=> wt is the difference btwn primitive and non-primitive data types..?
+=> wt the use of spread operator in js..?
+=> wt is ternary operator in js..?
+=> wt is rest-parameter..?
+

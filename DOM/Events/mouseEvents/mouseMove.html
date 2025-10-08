@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box" style="width: 150px; height: 150px; background-color: burlywood;"></div>
+    <p id="move"></p>
+    <script>
+        document.getElementById("box").addEventListener("mousemove", function (event) {
+            document.getElementById("move").textContent = "X : " + event.clientX + " Y : " + event.clientY;
+
+
+        })
+    </script>
+</body>
+
+</html>
