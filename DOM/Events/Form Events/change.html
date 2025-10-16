@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="colors">
+        <option value="">Select a color</option>
+        <option value="red">RED</option>
+        <option value="red">BLUE</option>
+        <option value="red">GREEN</option>
+    </select>
+    <P id="output"></P>
+    <script>
+        const select = document.getElementById("colors");
+        const output = document.getElementById("output");
+
+        select.addEventListener("change", () => {
+            output.innerText = `U Selected : ${select.value}`;
+        })
+    </script>
+</body>
+
+</html>

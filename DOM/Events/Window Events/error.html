@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window Error Event</title>
+</head>
+<body>
+
+  <h2>Window Error Event Example</h2>
+  <p>Open the console and see what happens when an error occurs.</p>
+
+  <script>
+    // Listen for any JavaScript errors in the window
+    window.addEventListener("error", (event) => {
+      console.log("An error occurred!");
+      console.log("Message:", event.message);
+      console.log("File:", event.filename);
+      console.log("Line:", event.lineno);
+      console.log("Column:", event.colno);
+    });
+
+    // Intentionally cause an error
+    notDefinedFunction(); //  This function doesn’t exist
+  </script>
+
+</body>
+</html>

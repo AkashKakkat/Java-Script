@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Before Unload</h1>
+    <p>Try to reload or leave the page</p>
+
+    <script>
+        window.addEventListener("beforeunload", () => {
+            event.preventDefault();
+            event.returnValue = " ";
+            
+        })
+    </script>
+</body>
+
+</html>

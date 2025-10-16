@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <audio controls id="audioSeeking">
+        <source src="./audio2.mpeg" type="audio/mpeg">
+    </audio>
+    <p id="timeOutput">Current Time : 0</p>
+    <script>
+        const audioSeeking = document.getElementById("audioSeeking");
+        const timeOutput = document.getElementById("timeOutput");
+
+        audioSeeking.addEventListener("seeking", () => {
+            timeOutput.textContent = `Current Time : ${audioSeeking.currentTime.toFixed(2)}`;
+        })
+    </script>
+</body>
+
+</html>

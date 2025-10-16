@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window Unload Event</title>
+</head>
+<body>
+
+  <h2>Unload Event Example</h2>
+  <p>Try refreshing or closing the tab to trigger the unload event.</p>
+
+  <script>
+    // Unload event fires when the page is about to be unloaded
+    window.addEventListener("unload", () => {
+      // You can use this to save data or cleanup tasks
+      console.log("Page is unloading...");
+    });
+  </script>
+
+</body>
+</html>

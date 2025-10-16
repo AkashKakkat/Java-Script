@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window Scroll Event</title>
+  <style>
+    body {
+      height: 2000px; /* To make the page scrollable */
+      background: linear-gradient(white, lightblue);
+    }
+    #msg {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background: black;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="msg">Scroll to see changes</div>
+
+  <script>
+    // Add a scroll event listener to the window
+    window.addEventListener("scroll", () => {
+      let scrollY = window.scrollY; // how much scrolled vertically
+      document.getElementById("msg").textContent = 
+        "Scrolled: " + scrollY + "px";
+    });
+  </script>
+
+</body>
+</html>

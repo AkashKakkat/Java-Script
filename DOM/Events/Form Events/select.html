@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea id="textarea">Hyy AKASH...</textarea>
+    <p id="otp"></p>
+    <script>
+        const textarea = document.getElementById("textarea");
+        const output = document.getElementById("otp");
+
+        textarea.addEventListener("select", () => {
+            output.innerText = "U Selected Some Text";
+        })
+    </script>
+</body>
+
+</html>

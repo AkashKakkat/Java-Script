@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="box" style="width:150px; height:150px; background-color:lightgreen;">
+  Hover over me
+</div>
+
+<script>
+  const box = document.getElementById("box");
+
+  box.addEventListener("mouseenter", function() {
+    box.style.backgroundColor = "orange";
+    box.innerText = "Mouse entered!";
+  });
+
+  box.addEventListener("mouseleave", function() {
+    box.style.backgroundColor = "lightgreen";
+    box.innerText = "Mouse left!";
+  });
+</script>
+
+</body>
+</html>
