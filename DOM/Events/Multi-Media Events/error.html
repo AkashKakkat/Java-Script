@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <audio  controls id="audioerror">
+        <source src="nonexistingfile.mp3" type="mp3">
+    </audio>
+    <p id="errormsg" style="color: brown; display: none;"></p>
+
+    <script>
+        const audioerror = document.getElementById("audioerror");
+        const errormsg = document.getElementById("errormsg");
+
+        // Listen for error on the source element
+        const source = audioerror.querySelector('source');
+        source.addEventListener("error", () => {
+            errormsg.textContent = 'Audio failed';
+            errormsg.style.display = 'block';
+            console.log('Failed');
+
+        })
+    </script>
+</body>
+
+</html>

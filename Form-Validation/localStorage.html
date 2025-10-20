@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>User Form</h1>
+    <form action="" id="usrfrm">
+        <label for="name">Name :</label>
+        <input type="text" id="name" required><br><br>
+        <label for="email">Email :</label>
+        <input type="email" id="email" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <h3>Saved Data : </h3>
+    <p id="otp"></p>
+
+    <script>
+        const form = document.getElementById("usrfrm");
+        const output = document.getElementById("otp");
+
+        // Window.addEventListener()
+
+        // Save Data to LocalStorage
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();// prevent page refresh
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            // to add data to localstorage (setItem)
+            localStorage.setItem('name', name);
+            localStorage.setItem('email', email);
+
+            output.textContent = ` Name : ${name} Email : ${email}`;
+            form.reset(); // clear form input
+
+        })
+
+
+    </script>
+</body>
+
+</html>
