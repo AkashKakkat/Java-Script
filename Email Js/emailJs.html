@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./emalJs.css">
+</head>
+
+<body>
+    <div>
+        <h2>Contact Form</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Ur name" required><br><br>
+            <input type="email" name="email" placeholder="Ur email" required><br><br>
+            <input type="text" name="title" placeholder="Ur title" required><br><br>
+            <textarea name="message" placeholder=" Ur message"></textarea><br><br>
+            <button type="submit">Send Message</button><br><br>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        // initialize emailjs
+        (function () {
+            emailjs.init("FEkd-lu-4975RYrRK") // public key
+        })();
+        // handle form submit
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            emailjs.sendForm("service_xhwg7lb", "template_qf4wg26", this)
+                .then(function () {
+                    alert("Message send Successfully...")
+                }, function (error) {
+                    alert("Failed to send Message...")
+
+                })
+        })
+    </script>
+</body>
+
+
+</html>
